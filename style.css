@@ -1,0 +1,70 @@
+/* write your styles here */
+
+body {
+    width: 100%;
+    margin: 0px;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    margin: 0px;
+    padding: 60px 0px;
+}
+
+h2 {
+    font-family: 'Sofia', cursive;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+marquee {
+    background-color: #ed484c;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+#nav-bar img {
+    height: 40px;
+    margin: 6px 15px 8px;
+}
+
+#nav-bar {
+    background-color: #4c4c4c;
+    position: sticky;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-bar ul {
+    display: flex;
+    flex: 1;
+    margin: 0;
+}
+
+#nav-bar ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+#nav-bar a {
+    color: #c7c7c7;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#about {
+    height: 450px;
+    width: 100%;
+    background-image: url("images/floral.png");
+    background-color: #f18d97;
+    text-align: center;
+}
