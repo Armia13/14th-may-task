@@ -3,23 +3,14 @@
 body {
     width: 100%;
     margin: 0px;
-}
-
-h1 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 4em;
-    font-weight: 900;
-    margin: 0px;
-    padding: 60px 0px;
-}
-
-h2 {
-    font-family: 'Sofia', cursive;
+    box-sizing: border-box;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
 }
+
+/* header */
 
 marquee {
     background-color: #ed484c;
@@ -44,7 +35,6 @@ marquee {
 
 #nav-bar ul {
     display: flex;
-    flex: 1;
     margin: 0;
 }
 
@@ -57,14 +47,182 @@ marquee {
 #nav-bar a {
     color: #c7c7c7;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
+/* Join now */
+
 #about {
-    height: 450px;
-    width: 100%;
-    background-image: url("images/floral.png");
+    height: 400px;
+    background-image: url(images/floral.png);
     background-color: #f18d97;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about h1 {
+    font: 900 4em 'Josefin Sans', sans-serif;
+    margin: 0px;
+    padding:40px 10px;
+    max-width: 860px;
+}
+
+button{
+    background-color: #160d0e;
+    border: none;
+    color: #f18d97;
+    font: 600 2em 'Montserrat', sans-serif;
+    padding: 20px 80px;
+}
+
+#about p{
+    border-top: 1px solid #160d0e;
+    border-bottom: 1px solid #160d0e;
+    padding: 26px 0px;
+    font: 600 1.4em 'Montserrat', sans-serif;
+    max-width: 840px;
     text-align: center;
+}
+
+/* services */
+
+#services {
+        height: 400px;
+        background-image: url(images/floral.png);
+        background-color:#efece7;
+        padding: 20px;
+        text-align: center;
+}
+
+#services h2 {
+    font:600 2.5em 'Sofia', cursive;
+    margin: 0px;
+}
+
+#course{
+    width:100%;
+    display:flex;
+    align-items:center;
+    font: 400 1em 'Montserrat', sans-serif;
+}
+
+#course i{
+    font-size: 7em;
+}
+
+#course figure:hover i{
+    color: #df3041;
+}
+
+/* portfolio */
+#portfolio{
+    height: 740px;
+        background-image: url(images/floral.png);
+        background-color:#ddceb4;
+        padding: 20px;
+}
+#portfolio h2 {
+    font:600 2.5em 'Sofia', cursive;
+    margin: 0px;
+    padding:25px 5px;
+    text-align: center;
+}
+
+#portfolio p{
+    border-top: 1px solid #160d0e;
+    border-bottom: 1px solid #160d0e;
+    padding: 26px 0px;
+    font: 600 1.4em 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#portfolio img{
+    width: 210px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    margin: 0em 11em;
+
+}
+
+#projects figcaption{
+    background-color: #191919d9;
+    width: 210px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#projects h4{
+    font: 600 1em 'Montserrat', sans-serif;
+    padding-top: 30px;
+    color: #ffffff;
+}
+
+#projects i{
+    border-radius:50%;
+    padding:10px;
+    /* margin: 5px; */
+    margin-bottom:20px;
+    color: #ffffff;
+    font-size: 1.2em;
+    border:1px solid #ffffff;
+}
+
+
+/* contact */
+#contact-us{
+    height: 230px;
+    background-color: #afc7c6;
+    background-image: url(images/floral.png);
+    text-align: center;
+}
+
+#contact-us h2{
+    font:600 2.5em 'Sofia', cursive;
+    margin: 0px;
+    padding:25px 5px;
+    text-align: center;
+}
+
+#contact-us i{
+    font-size: 3em;
+    border: 1px solid #212121;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    padding: 14px 18px;
+    margin: 0px 6px;
+    color: #212121;
+}
+#contact-us i:hover {
+    background-color: #212121;
+    color:#ffdfa2;
+    cursor: pointer;
+}
+
+
+footer{
+    height: 80px;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 600 1em 'Montserrat', sans-serif;
+    color:#ffffff;
+}
+
+footer:hover i{
+    color: #ef3b4c;
+}
+
+footer i{
+    margin: 0 5px;
 }
