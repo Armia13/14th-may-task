@@ -47,16 +47,15 @@ marquee {
 #nav-bar a {
     color: #c7c7c7;
     text-decoration: none;
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
 /* Join now */
 
 #about {
-    height: 400px;
-    background-image: url(images/floral.png);
     background-color: #f18d97;
+    background-image: url(images/floral.png);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -66,11 +65,11 @@ marquee {
 #about h1 {
     font: 900 4em 'Josefin Sans', sans-serif;
     margin: 0px;
-    padding:40px 10px;
+    padding: 40px 10px;
     max-width: 860px;
 }
 
-button{
+button {
     background-color: #160d0e;
     border: none;
     color: #f18d97;
@@ -78,7 +77,7 @@ button{
     padding: 20px 80px;
 }
 
-#about p{
+#about p {
     border-top: 1px solid #160d0e;
     border-bottom: 1px solid #160d0e;
     padding: 26px 0px;
@@ -90,48 +89,48 @@ button{
 /* services */
 
 #services {
-        height: 400px;
-        background-image: url(images/floral.png);
-        background-color:#efece7;
-        padding: 20px;
-        text-align: center;
+    background-color: #efece7;
+    background-image: url(images/floral.png);
+    padding: 20px;
+    text-align: center;
 }
 
 #services h2 {
-    font:600 2.5em 'Sofia', cursive;
+    font: 600 2.5em 'Sofia', cursive;
     margin: 0px;
 }
 
-#course{
-    width:100%;
-    display:flex;
-    align-items:center;
+#course {
+    width: 100%;
+    display: flex;
+    align-items: center;
     font: 400 1em 'Montserrat', sans-serif;
 }
 
-#course i{
+#course i {
     font-size: 7em;
 }
 
-#course figure:hover i{
+#course figure:hover i {
     color: #df3041;
 }
 
 /* portfolio */
-#portfolio{
-    height: 740px;
-        background-image: url(images/floral.png);
-        background-color:#ddceb4;
-        padding: 20px;
+
+#portfolio {
+    background-color: #ddceb4;
+    background-image: url(images/floral.png);
+    padding: 20px;
 }
+
 #portfolio h2 {
-    font:600 2.5em 'Sofia', cursive;
+    font: 600 2.5em 'Sofia', cursive;
     margin: 0px;
-    padding:25px 5px;
+    /* padding:25px 5px; */
     text-align: center;
 }
 
-#portfolio p{
+#portfolio p {
     border-top: 1px solid #160d0e;
     border-bottom: 1px solid #160d0e;
     padding: 26px 0px;
@@ -139,60 +138,69 @@ button{
     text-align: center;
 }
 
-#portfolio img{
+#portfolio figure {
+    position: relative;
+}
+
+#portfolio img {
     width: 210px;
     height: 150px;
     border-radius: 10px;
 }
 
-#projects{
+#projects {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     margin: 0em 11em;
-
 }
 
-#projects figcaption{
+#projects figcaption {
     background-color: #191919d9;
     width: 210px;
     height: 150px;
     border-radius: 10px;
+    position: absolute;
+    top: 0px;
     text-align: center;
+    display: none;
 }
 
-#projects h4{
+#projects figure:hover>figcaption {
+    display: block;
+}
+
+#projects h4 {
     font: 600 1em 'Montserrat', sans-serif;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     color: #ffffff;
 }
 
-#projects i{
-    border-radius:50%;
-    padding:10px;
+#projects i {
+    border-radius: 100%;
+    padding: 10px;
     /* margin: 5px; */
-    margin-bottom:20px;
     color: #ffffff;
     font-size: 1.2em;
-    border:1px solid #ffffff;
+    border: 1px solid #ffffff;
 }
-
 
 /* contact */
-#contact-us{
-    height: 230px;
-    background-color: #afc7c6;
+
+#contact-us {
     background-image: url(images/floral.png);
+    background-color: #afc7c6;
     text-align: center;
+    padding: 1em;
 }
 
-#contact-us h2{
-    font:600 2.5em 'Sofia', cursive;
+#contact-us h2 {
+    font: 600 2.5em 'Sofia', cursive;
     margin: 0px;
-    padding:25px 5px;
+    padding: 25px 5px;
     text-align: center;
 }
 
-#contact-us i{
+#contact-us i {
     font-size: 3em;
     border: 1px solid #212121;
     height: 50px;
@@ -202,27 +210,46 @@ button{
     margin: 0px 6px;
     color: #212121;
 }
+
 #contact-us i:hover {
     background-color: #212121;
-    color:#ffdfa2;
+    color: #ffdfa2;
     cursor: pointer;
 }
 
-
-footer{
+footer {
     height: 80px;
     background-color: #212121;
     display: flex;
     align-items: center;
     justify-content: center;
     font: 600 1em 'Montserrat', sans-serif;
-    color:#ffffff;
+    color: #ffffff;
 }
 
-footer:hover i{
+footer:hover i {
     color: #ef3b4c;
 }
 
-footer i{
+footer i {
     margin: 0 5px;
 }
+
+/* @media screen and (min-width: 480px) 
+{
+    #course{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        font: 400 1em 'Montserrat', sans-serif;
+    }  
+
+    #about h1 {
+        font: 900 3em 'Josefin Sans', sans-serif;
+        margin: 0px;
+        padding:40px 10px;
+        max-width: 860px;
+    }
+
+} */
